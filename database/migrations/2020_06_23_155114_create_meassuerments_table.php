@@ -15,9 +15,11 @@ class CreateMeassuermentsTable extends Migration
     {
         Schema::create('meassuerments', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('humidity');
+            $table->text('humudity');
             $table->text('temprature');
             $table->text('water_content');
+            $table->text('soil_moisture1');
+            $table->text('soil_moisture2');
             $table->timestamps();
         });
     }

@@ -14,6 +14,8 @@ try{
         'temprature'=>$request->temprature,
         'humudity'=>$request->humudity,
         'water_content'=>$request->water,
+        'soil_moisture1'=>$request->soil_moisture1,
+        'soil_moisture2'=>$request->soil_moisture2,
         'created_at'=>Carbon::now()->format('Y-m-d H:i:s')
     ]);
     return response()->json([

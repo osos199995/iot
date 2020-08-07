@@ -10,6 +10,8 @@ class Meassuerments extends Model
 'humudity',
 'temprature',
 'water_content',
+'soil_moisture1',
+'soil_moisture2',
  'created_at'
     ];
 }

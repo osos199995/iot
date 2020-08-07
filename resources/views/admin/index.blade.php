@@ -29,6 +29,8 @@
                     <th>Temprature</th>
                     <th>Water Content</th>
                     <th>Humudity</th>
+                    <th>soil Moisture1</th>
+                    <th>soil Moisture2</th>
                     <th>Time</th>
 
 
@@ -43,6 +45,8 @@
                     <td>{{$meassure->temprature}}</td>
                     <td>{{$meassure->humudity}}</td>
                     <td>{{$meassure->water_content}}</td>
+                    <td>{{$meassure->soil_moisture1}}</td>
+                    <td>{{$meassure->soil_moisture2}}</td>
                     <td>{{$meassure->created_at}}</td>
 
 
