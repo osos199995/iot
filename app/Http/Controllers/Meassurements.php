@@ -37,4 +37,14 @@ try{
        return view('admin.index',compact('meassuerments'));
     }
 
+
+public function getData(){
+    $meassuerments= Meassuerments::all();
+    return response()->json(['data'=>$meassuerments]);
+}
+
+
+
+
+
 }

@@ -17,3 +17,5 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 Route::post('measuerments','Meassurements@store')->name('measuerments');
+Route::get('pump','SettingsController@pumpControl')->name('pump');
+Route::get('get_meassuerments','Meassurements@getData')->name('get_meassuerments');

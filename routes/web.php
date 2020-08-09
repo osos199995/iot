@@ -18,5 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@show')->name('home');
+Route::get('/settings', 'SettingsController@index')->name('settings');
+Route::get('pump1/{id}/{status}', 'SettingsController@updatefirstpump');
+
+Route::get('pump2/{id}/{status}', 'SettingsController@updatesecoundpump');
 
 Route::post('measuerments','Meassurements@store')->name('measuerments');

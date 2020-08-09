@@ -6,13 +6,25 @@
     <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon_1.ico')}}">
     <title>Digital</title>
     <!--Morris Chart CSS -->
+    <link href="{{asset('admin_assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css')}}" rel="stylesheet" />
+
+    <link href="{{asset('admin_assets/plugins/multiselect/css/multi-select.css')}}"  rel="stylesheet" type="text/css" />
+    <link href="{{asset('admin_assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('admin_assets/plugins/bootstrap-select/css/bootstrap-select.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin_assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" />
+
+
+
     <link rel="stylesheet" href="{{asset('admin_assets/plugins/morris/morris.css')}}">
+    <link href="{{asset('admin_assets/plugins/bootstrap-table/css/bootstrap-table.min.css')}}" rel="stylesheet" type="text/css" />
+
     <link href=" {{asset('admin_assets/plugins/bootstrap-sweetalert/sweet-alert.css')}}" rel="stylesheet" type="text/css">
     <link href=" {{asset('admin_assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('admin_assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('admin_assets/css/style.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('admin_assets/css/new-style.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('admin_assets/js/modernizr.min.js')}}"></script>
+    <script src="{{asset('admin_assets/plugins/switchery/js/switchery.min.js')}}"></script>
     @yield('styles')
 </head>
 <body class="fixed-left">
@@ -77,6 +89,10 @@
                 <ul>
                     <li>
                         <a href="{{route('home')}}" class="waves-effect"><i class="fa fa-dashboard"></i> <span> Dashboard </span></a>
+                    </li>
+
+                    <li>
+                        <a href="{{route('settings')}}" class="waves-effect"><i class="fa fa-gear"></i> <span> Settings </span></a>
                     </li>
                     <li class="has_sub">
 
