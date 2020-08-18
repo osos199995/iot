@@ -12,6 +12,7 @@ class Meassuerments extends Model
 'water_content',
 'soil_moisture1',
 'soil_moisture2',
+'smoke',
  'created_at'
     ];
 }

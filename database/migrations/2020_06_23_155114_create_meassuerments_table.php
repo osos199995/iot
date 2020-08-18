@@ -20,6 +20,7 @@ class CreateMeassuermentsTable extends Migration
             $table->text('water_content');
             $table->text('soil_moisture1');
             $table->text('soil_moisture2');
+            $table->text('smoke');
             $table->timestamps();
         });
     }

@@ -16,6 +16,7 @@ try{
         'water_content'=>$request->water,
         'soil_moisture1'=>$request->soil_moisture1,
         'soil_moisture2'=>$request->soil_moisture2,
+        'smoke'=>$request->smoke,
         'created_at'=>Carbon::now()->format('Y-m-d H:i:s')
     ]);
     return response()->json([
